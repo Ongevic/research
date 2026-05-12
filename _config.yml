@@ -7,12 +7,11 @@ source: src
 profile:
   name: "Victor Nyabuti Ong'era"
   short_name: "Victor Nyabuti Ong'era"
-  title: "PhD Researcher in Climate and Agriculture"
-  location: "Pavia and Milan, Italy"
+  title: "PhD Researcher in Sustainable Development and Climate Change"
+  location: "IUSS Pavia, Italy"
   tagline: "I work on climate-resilient farming systems using crop models, seasonal forecasts, and environmental data."
   intro: "This site brings together my CV, selected research, and short updates on projects, tutorials, and practical methods."
   bio:
-    - "I am a PhD researcher in Sustainable Development and Climate Change at IUSS Pavia, with a background in environmental change and environmental engineering."
     - "My work focuses on crop simulation models, seasonal climate forecasts, and climate-risk analysis for agriculture, especially where better decisions can support more resilient farming systems."
   links:
     github: "https://github.com/Ongevic"
