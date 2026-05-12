@@ -59,11 +59,3 @@ permalink: /cv/
   </ul>
 </section>
 
-<section class="cv-section">
-  <h2>Profiles</h2>
-  <ul class="inline-links">
-    <li><a href="{{ site.profile.links.github }}" target="_blank" rel="noreferrer">GitHub</a></li>
-    <li><a href="{{ site.profile.links.linkedin }}" target="_blank" rel="noreferrer">LinkedIn</a></li>
-    <li><a href="{{ site.profile.links.cv_pdf | relative_url }}" target="_blank" rel="noreferrer">PDF CV</a></li>
-  </ul>
-</section>
