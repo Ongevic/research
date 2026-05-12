@@ -1,75 +1,172 @@
 body {
-    font-family: serif;
-    font-size: 18px;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 17px;
     line-height: 1.55;
-    margin: 28px auto;
-    max-width: 760px;
-    padding: 0 22px 48px;
+    margin: 32px auto;
+    max-width: 680px;
+    padding: 0 20px 60px;
     color: #000;
     background: #fff;
 }
 
 h1, h2, h3 {
-    color: #000;
-    font-weight: 700;
+    font-weight: bold;
 }
 
 h1 {
-    font-size: 2.1rem;
-    margin: 0 0 0.25rem;
+    font-size: 1.6rem;
+    margin: 0 0 0.2rem;
 }
 
 h2 {
-    font-size: 1.2rem;
-    margin: 1.8rem 0 0.6rem;
+    font-size: 1rem;
+    font-style: italic;
+    font-weight: normal;
+    margin: 1.6rem 0 0.4rem;
+    border: none;
 }
 
-p, ul {
-    margin: 0.7rem 0;
+h3 {
+    font-size: 1rem;
+    margin: 1.2rem 0 0.3rem;
+}
+
+p, ul, ol {
+    margin: 0.6rem 0;
 }
 
 a {
-    color: #0000ff;
+    color: #00c;
     text-decoration: underline;
 }
 
 a:visited {
-    color: #800080;
+    color: #551a8b;
 }
 
 ul {
-    padding-left: 1.35rem;
+    padding-left: 1.3rem;
 }
 
-.home-page {
+/* ── Homepage ── */
+
+.home-meta {
+    color: #555;
+    font-size: 0.88em;
+    margin: 0 0 1.6rem;
+}
+
+.home-body {
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    gap: 0 1.8rem;
+    align-items: start;
+}
+
+.home-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    padding-top: 2px;
+    text-align: right;
+}
+
+.home-nav a {
+    display: block;
+    font-size: 1em;
+    text-decoration: underline;
+    color: #00c;
+}
+
+.home-nav a:visited {
+    color: #551a8b;
+}
+
+.home-nav a:hover {
+    text-decoration: underline;
+}
+
+.home-main p {
+    margin: 0.55rem 0;
+    font-size: 0.93em;
+    line-height: 1.5;
+}
+
+.home-main h2 {
+    font-size: 0.93em;
+    font-style: italic;
+    font-weight: normal;
+    margin: 1.5rem 0 0.4rem;
+    color: #333;
+}
+
+/* ── Inner pages ── */
+
+.page-content {
+    margin-top: 0.5rem;
+}
+
+.page-content h2 {
+    font-size: 1.1rem;
+    margin: 1.8rem 0 0.5rem;
+}
+
+.page-content h3 {
+    font-size: 1rem;
+    margin: 1.4rem 0 0.3rem;
+}
+
+.back-link {
+    font-size: 0.87em;
+    margin-bottom: 1.6rem;
     display: block;
 }
 
-.home-meta {
-    margin: 0.1rem 0;
+/* ── Research list ── */
+
+.research-list p {
+    margin: 0.5rem 0;
 }
 
-.home-links {
-    margin: 0.55rem 0;
+/* ── News / writing ── */
+
+.news-list p {
+    margin: 0.5rem 0;
 }
 
-.home-header {
-    margin-bottom: 1.2rem;
+/* ── CV page ── */
+
+.cv-section {
+    margin-top: 1.8rem;
 }
 
-.interest-list {
-    margin-top: 1rem;
+.cv-entry {
+    margin: 0.8rem 0;
 }
 
-.project-list {
-    margin-top: 1.2rem;
+.cv-entry .role {
+    font-weight: bold;
 }
 
-.project-list p,
-.writing-list p {
-    margin: 0.55rem 0;
+.cv-entry .org {
+    font-style: italic;
 }
 
-.writing-list {
-    margin-top: 1.6rem;
+.cv-entry .period {
+    color: #555;
+    font-size: 0.88em;
+}
+
+/* ── Responsive ── */
+
+@media (max-width: 480px) {
+    .home-body {
+        grid-template-columns: 1fr;
+    }
+
+    .home-nav {
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-bottom: 1rem;
+    }
 }
