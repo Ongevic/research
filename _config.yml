@@ -2,6 +2,7 @@ name: "Victor Nyabuti Ong'era"
 description: "Personal website for Victor Nyabuti Ong'era: interactive CV, research portfolio, and tutorial updates."
 url: "https://ongevic.github.io"
 baseurl: "/research"
+source: src
 
 profile:
   name: "Victor Nyabuti Ong'era"
