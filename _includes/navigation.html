@@ -1,0 +1,27 @@
+<header class="site-header">
+  <div class="container header-container">
+    <a href="{{ '/' | relative_url }}" class="site-logo">
+      <span class="logo-mark">VO</span>
+      <span class="logo-text">{{ site.profile.name }}</span>
+    </a>
+    <div class="header-actions">
+      <nav class="site-nav" aria-label="Main navigation">
+        <ul>
+          {% for item in site.navigation %}
+          <li><a href="{{ item.url | relative_url }}" class="{% if page.url == item.url %}active{% endif %}">{{ item.title }}</a></li>
+          {% endfor %}
+        </ul>
+      </nav>
+      <div class="theme-switcher" aria-label="Theme switcher">
+        <label class="theme-select-wrap">
+          <span class="theme-select-label">Theme</span>
+          <select class="theme-select" data-theme-select aria-label="Choose theme">
+            <option value="day">Day</option>
+            <option value="rust">Rust</option>
+            <option value="night">Night</option>
+          </select>
+        </label>
+      </div>
+    </div>
+  </div>
+</header>

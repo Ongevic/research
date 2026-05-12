@@ -1,0 +1,14 @@
+---
+layout: default
+---
+<article class="container detail-page">
+  <header class="detail-header">
+    <p class="eyebrow">Update</p>
+    <h1>{{ page.title }}</h1>
+    <p class="detail-subtitle">{{ page.date | date: "%B %-d, %Y" }}</p>
+  </header>
+
+  <div class="content-block">
+    {{ content }}
+  </div>
+</article>

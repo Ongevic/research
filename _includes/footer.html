@@ -1,0 +1,28 @@
+<footer class="site-footer">
+  <div class="container footer-container">
+    <div>
+      <h2 class="footer-title">{{ site.profile.name }}</h2>
+      <p class="footer-copy">{{ site.profile.title }}</p>
+      <p class="footer-copy">{{ site.profile.location }}</p>
+    </div>
+    <div>
+      <h3 class="footer-heading">Connect</h3>
+      <ul class="footer-list">
+        {% if site.profile.email and site.profile.email != "" %}
+        <li><a href="mailto:{{ site.profile.email }}">{{ site.profile.email }}</a></li>
+        {% endif %}
+        <li><a href="{{ site.profile.links.github }}" target="_blank" rel="noreferrer">GitHub</a></li>
+        <li><a href="{{ site.profile.links.linkedin }}" target="_blank" rel="noreferrer">LinkedIn</a></li>
+        <li><a href="{{ site.profile.links.cv_pdf | relative_url }}" target="_blank" rel="noreferrer">PDF CV</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="footer-heading">Site</h3>
+      <ul class="footer-list">
+        {% for item in site.navigation %}
+        <li><a href="{{ item.url | relative_url }}">{{ item.title }}</a></li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+</footer>

@@ -1,0 +1,31 @@
+body {
+    font-family: serif;
+    line-height: 1.5;
+    margin: 20px auto;
+    max-width: 800px;
+    padding: 0 20px;
+    color: #000;
+    background: #fff;
+}
+
+h2, h3 {
+    font-family: sans-serif;
+    color: #000;
+}
+
+a {
+    color: #0000ff;
+    text-decoration: underline;
+}
+
+a:visited {
+    color: #800080;
+}
+
+table {
+    width: 100%;
+}
+
+td {
+    vertical-align: top;
+}
