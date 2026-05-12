@@ -3,7 +3,11 @@ body {
     font-size: 18px;
     line-height: 1.55;
     margin: 28px auto;
+<<<<<<< HEAD
     max-width: 920px;
+=======
+    max-width: 760px;
+>>>>>>> origin/main
     padding: 0 22px 48px;
     color: #000;
     background: #fff;
@@ -19,6 +23,14 @@ h1 {
     margin: 0 0 0.25rem;
 }
 
+<<<<<<< HEAD
+=======
+h2 {
+    font-size: 1.2rem;
+    margin: 1.8rem 0 0.6rem;
+}
+
+>>>>>>> origin/main
 p, ul {
     margin: 0.7rem 0;
 }
@@ -36,11 +48,16 @@ ul {
     padding-left: 1.35rem;
 }
 
+<<<<<<< HEAD
 .home-page {
     display: grid;
     grid-template-columns: minmax(180px, 240px) minmax(0, 1fr);
     column-gap: 40px;
     align-items: start;
+=======
+.home-header {
+    margin-bottom: 1.2rem;
+>>>>>>> origin/main
 }
 
 .home-meta {
@@ -48,6 +65,7 @@ ul {
 }
 
 .home-links {
+<<<<<<< HEAD
     margin: 0.5rem 0;
 }
 
@@ -83,3 +101,15 @@ ul {
         position: static;
     }
 }
+=======
+    margin-top: 0.55rem;
+}
+
+.home-page section {
+    margin-top: 1.4rem;
+}
+
+.project-list p {
+    margin: 0.55rem 0;
+}
+>>>>>>> origin/main

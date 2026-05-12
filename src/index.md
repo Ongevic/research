@@ -4,9 +4,16 @@ title: Victor Nyabuti Ong'era
 ---
 
 <div class="home-page">
+<<<<<<< HEAD
   <aside class="home-sidebar">
     <h1>{{ site.profile.name }}</h1>
     <p class="home-meta">{{ site.profile.title }}</p>
+=======
+  <header class="home-header">
+    <h1>{{ site.profile.name }}</h1>
+    <p class="home-meta">{{ site.profile.title }}</p>
+    <p class="home-meta">{{ site.profile.location }}</p>
+>>>>>>> origin/main
     <p class="home-links">
       <a href="{{ '/cv/' | relative_url }}">CV</a> &bullet;
       <a href="{{ site.profile.links.cv_pdf | relative_url }}">Resume</a> &bullet;
@@ -15,13 +22,28 @@ title: Victor Nyabuti Ong'era
       <a href="{{ site.profile.links.github }}">GitHub</a> &bullet;
       <a href="{{ site.profile.links.linkedin }}">LinkedIn</a>
     </p>
+<<<<<<< HEAD
     <p class="home-meta">{{ site.profile.location }}</p>
 
     <ul class="interest-list">
+=======
+  </header>
+
+  <p>{{ site.profile.intro }}</p>
+
+  {% for paragraph in site.profile.bio %}
+  <p>{{ paragraph }}</p>
+  {% endfor %}
+
+  <section>
+    <h2>Research interests</h2>
+    <ul>
+>>>>>>> origin/main
       {% for interest in site.profile.interests %}
       <li>{{ interest }}</li>
       {% endfor %}
     </ul>
+<<<<<<< HEAD
   </aside>
 
   <main class="home-main">
@@ -29,6 +51,12 @@ title: Victor Nyabuti Ong'era
     <p>{{ paragraph }}</p>
     {% endfor %}
 
+=======
+  </section>
+
+  <section>
+    <h2>Some projects I'm associated with</h2>
+>>>>>>> origin/main
     <div class="project-list">
       {% for item in site.research %}
       <p>
@@ -44,6 +72,7 @@ title: Victor Nyabuti Ong'era
       </p>
       {% endfor %}
     </div>
+<<<<<<< HEAD
 
     <div class="writing-list">
       {% for post in site.news limit:5 %}
@@ -54,4 +83,19 @@ title: Victor Nyabuti Ong'era
       {% endfor %}
     </div>
   </main>
+=======
+  </section>
+
+  <section>
+    <h2>Recent writing</h2>
+    <ul>
+      {% for post in site.news limit:5 %}
+      <li>
+        <a href="{{ post.url | relative_url }}">{{ post.title }}</a>.
+        {{ post.date | date: "%B %-d, %Y" }}
+      </li>
+      {% endfor %}
+    </ul>
+  </section>
+>>>>>>> origin/main
 </div>
