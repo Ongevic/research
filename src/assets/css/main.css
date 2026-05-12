@@ -1,0 +1,85 @@
+body {
+    font-family: serif;
+    font-size: 18px;
+    line-height: 1.55;
+    margin: 28px auto;
+    max-width: 920px;
+    padding: 0 22px 48px;
+    color: #000;
+    background: #fff;
+}
+
+h1, h2, h3 {
+    color: #000;
+    font-weight: 700;
+}
+
+h1 {
+    font-size: 2.1rem;
+    margin: 0 0 0.25rem;
+}
+
+p, ul {
+    margin: 0.7rem 0;
+}
+
+a {
+    color: #0000ff;
+    text-decoration: underline;
+}
+
+a:visited {
+    color: #800080;
+}
+
+ul {
+    padding-left: 1.35rem;
+}
+
+.home-page {
+    display: grid;
+    grid-template-columns: minmax(180px, 240px) minmax(0, 1fr);
+    column-gap: 40px;
+    align-items: start;
+}
+
+.home-meta {
+    margin: 0.1rem 0;
+}
+
+.home-links {
+    margin: 0.5rem 0;
+}
+
+.home-sidebar {
+    position: sticky;
+    top: 20px;
+}
+
+.interest-list {
+    margin-top: 1rem;
+}
+
+.project-list {
+    margin-top: 1.2rem;
+}
+
+.project-list p,
+.writing-list p {
+    margin: 0.55rem 0;
+}
+
+.writing-list {
+    margin-top: 1.6rem;
+}
+
+@media (max-width: 760px) {
+    .home-page {
+        grid-template-columns: 1fr;
+        row-gap: 1.5rem;
+    }
+
+    .home-sidebar {
+        position: static;
+    }
+}
