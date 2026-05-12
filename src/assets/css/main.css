@@ -3,7 +3,7 @@ body {
     font-size: 18px;
     line-height: 1.55;
     margin: 28px auto;
-    max-width: 920px;
+    max-width: 760px;
     padding: 0 22px 48px;
     color: #000;
     background: #fff;
@@ -17,6 +17,11 @@ h1, h2, h3 {
 h1 {
     font-size: 2.1rem;
     margin: 0 0 0.25rem;
+}
+
+h2 {
+    font-size: 1.2rem;
+    margin: 1.8rem 0 0.6rem;
 }
 
 p, ul {
@@ -37,10 +42,7 @@ ul {
 }
 
 .home-page {
-    display: grid;
-    grid-template-columns: minmax(180px, 240px) minmax(0, 1fr);
-    column-gap: 40px;
-    align-items: start;
+    display: block;
 }
 
 .home-meta {
@@ -48,12 +50,11 @@ ul {
 }
 
 .home-links {
-    margin: 0.5rem 0;
+    margin: 0.55rem 0;
 }
 
-.home-sidebar {
-    position: sticky;
-    top: 20px;
+.home-header {
+    margin-bottom: 1.2rem;
 }
 
 .interest-list {
@@ -71,15 +72,4 @@ ul {
 
 .writing-list {
     margin-top: 1.6rem;
-}
-
-@media (max-width: 760px) {
-    .home-page {
-        grid-template-columns: 1fr;
-        row-gap: 1.5rem;
-    }
-
-    .home-sidebar {
-        position: static;
-    }
 }

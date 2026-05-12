@@ -4,7 +4,7 @@ title: Victor Nyabuti Ong'era
 ---
 
 <div class="home-page">
-  <aside class="home-sidebar">
+  <header class="home-header">
     <h1>{{ site.profile.name }}</h1>
     <p class="home-meta">{{ site.profile.title }}</p>
     <p class="home-links">
@@ -16,18 +16,19 @@ title: Victor Nyabuti Ong'era
       <a href="{{ site.profile.links.linkedin }}">LinkedIn</a>
     </p>
     <p class="home-meta">{{ site.profile.location }}</p>
+  </header>
 
+  <div class="home-main">
+    {% for paragraph in site.profile.bio %}
+    <p>{{ paragraph }}</p>
+    {% endfor %}
+
+    <h2>Some projects I'm associated with...</h2>
     <ul class="interest-list">
       {% for interest in site.profile.interests %}
       <li>{{ interest }}</li>
       {% endfor %}
     </ul>
-  </aside>
-
-  <main class="home-main">
-    {% for paragraph in site.profile.bio %}
-    <p>{{ paragraph }}</p>
-    {% endfor %}
 
     <div class="project-list">
       {% for item in site.research %}
@@ -45,6 +46,7 @@ title: Victor Nyabuti Ong'era
       {% endfor %}
     </div>
 
+    <h2>Recent writing</h2>
     <div class="writing-list">
       {% for post in site.news limit:5 %}
       <p>
@@ -53,5 +55,5 @@ title: Victor Nyabuti Ong'era
       </p>
       {% endfor %}
     </div>
-  </main>
+  </div>
 </div>
