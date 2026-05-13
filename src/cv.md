@@ -1,61 +1,37 @@
 ---
-layout: page
-title: CV - Victor Nyabuti Ong'era
+layout: default
+title: CV
 permalink: /cv/
 ---
 
-<div class="page-intro">
-  {% for paragraph in site.profile.cv.summary %}
-  <p>{{ paragraph }}</p>
-  {% endfor %}
-</div>
+# CV
 
-<section class="cv-section">
-  <h2>Highlights</h2>
-  <ul class="stack-list">
-    {% for item in site.profile.cv.highlights %}
-    <li>{{ item }}</li>
-    {% endfor %}
-  </ul>
-</section>
+[PDF CV](/research/assets/docs/Victor-Ongera-CV.pdf) &middot; [GitHub](https://github.com/Ongevic) &middot; [LinkedIn](https://www.linkedin.com/in/victor-nyabuti-ongera-156394114/)
 
-<section class="cv-section">
-  <h2>Experience</h2>
-  <div class="timeline">
-    {% for item in site.profile.cv.experience %}
-    <article class="timeline-item">
-      <div class="timeline-head">
-        <h3>{{ item.role }}</h3>
-        <p>{{ item.period }}</p>
-      </div>
-      <p class="timeline-org">{{ item.organisation }}</p>
-      <p>{{ item.description }}</p>
-    </article>
-    {% endfor %}
-  </div>
-</section>
+PhD researcher working on the links between climate, agriculture, and decision support, with experience across crop modelling, environmental analysis, and applied data work.
 
-<section class="cv-section">
-  <h2>Education</h2>
-  <div class="timeline">
-    {% for item in site.profile.cv.education %}
-    <article class="timeline-item">
-      <div class="timeline-head">
-        <h3>{{ item.degree }}</h3>
-        <p>{{ item.period }}</p>
-      </div>
-      <p class="timeline-org">{{ item.institution }}</p>
-    </article>
-    {% endfor %}
-  </div>
-</section>
+## Experience
 
-<section class="cv-section">
-  <h2>Skills</h2>
-  <ul class="tag-list">
-    {% for skill in site.profile.cv.skills %}
-    <li>{{ skill }}</li>
-    {% endfor %}
-  </ul>
-</section>
+**Visiting Researcher** — Department of Agroecology, Aarhus University. June 2025 – December 2025.
+Conducted field campaigns, integrated phenological and remote sensing datasets with crop models, and contributed to wheat growth and disease monitoring research.
 
+**Intern** — CASSANDRA Lab, University of Milan. March 2023 – October 2023.
+Analyzed climate change impacts on wheat across countries, retrieved and processed historical and future climate data in R, and explored adaptation strategies through modelling and sensitivity analysis.
+
+**Data Analyst** — Pallon. March 2020 – November 2022.
+Delivered data analysis, dashboards, and documentation to support business decision-making and improve data literacy for non-technical stakeholders.
+
+**Intern** — General Directorate of Water Management (OVF). July 2019 – December 2019.
+Supported suitability analysis, site preparation, and design interpretation for water-management related projects.
+
+## Education
+
+**PhD in Sustainable Development and Climate Change** — Istituto Universitario di Studi Superiori, Pavia. 2023–2026.
+
+**MSc in Environmental Change and Global Sustainability Science** — University of Milan. 2021–2023.
+
+**BSc in Environmental Engineering** — University of Public Service, Budapest. 2016–2021.
+
+## Skills
+
+DSSAT, APSIM, STICS, R, Python, Bash, CDO tools, AutoCAD, EPANET, Remote sensing
