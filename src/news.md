@@ -4,10 +4,6 @@ title: Updates
 permalink: /news/
 ---
 
-<div class="page-intro">
-  <p>Use this page for tutorials, short notes, release announcements, and research updates. It gives you a lightweight news feed without turning the site into a full blog.</p>
-</div>
-
 <div class="news-list">
   {% for post in site.news %}
   <article class="news-item">
