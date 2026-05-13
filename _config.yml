@@ -27,7 +27,6 @@ profile:
   cv:
     summary:
       - "PhD researcher working on the links between climate, agriculture, and decision support, with experience across crop modelling, environmental analysis, and applied data work."
-      - "This online CV is designed to make it easy to review my academic background, research experience, and technical skills without relying only on a PDF."
     highlights:
       - "Applies DSSAT, APSIM, and STICS to climate-risk and agricultural systems questions"
       - "Works with R, Python, Bash, and CDO tools for environmental data analysis"
